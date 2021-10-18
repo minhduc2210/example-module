@@ -6,6 +6,6 @@ DEPS=Color.h	Point.h
 $(TARGET): $(OBJ)
 	$(CPP)	-o	$@	$(OBJ)
 %.o: %.cpp	(DEPS)
-	$(CPP)	-cpp	$<
+	$(CPP)	-c	$<
 clean:
 	rm	-f	$(TARGET)	$(OBJ)
